@@ -5,12 +5,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class WebTest {
     @Test
     public void delfiFirstTitleTest () {
-        System.setProperty("webdriver.gecko.driver", "/Users/nadia/Downloads/geckodriver"); //прописываем настройку
+        System.setProperty("webdriver.gecko.driver", "/Users/nadia/Downloads/geckodriver"); //прописываем путь
         WebDriver driver = new FirefoxDriver(); //открываем новое окно
         driver.manage().window().maximize(); // расширяем на окно
         driver.get("http://www.delfi.lv/"); // фунция get которая перекидывает на сайт
-
-
 
     }
 }
